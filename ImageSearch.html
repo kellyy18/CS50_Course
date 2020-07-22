@@ -2,18 +2,37 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
+        <h1 style="text-align: center;">Google Image Search</h1>
         <style>
-            .container {
+            .absolute {
                 position: absolute;
                 right: 150px;
                 width: 200px;
                 height: 120px;
             }
+
+            #rcorners1 {
+                border-radius: 25px;
+                width: 500px;
+                height: 25px;    
+            }
+
+            div {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="absolute">
             <a href="index.html">Back to Google Search</a>
         </div>
+        <form action="https://google.com/search">
+            <div class="container"
+            <input type="hidden" type="text" name="tbm" value="isch">
+            <input id=rcorners1 type="text" name="q">
+            <p></p>
+            <input type="submit" value="Google Image Search">
+            </div>
+        </form>
     </body>
 </html>
