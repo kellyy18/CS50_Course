@@ -3,17 +3,38 @@
     <head>
         <title>Advanced Search</title>
         <style>
-            .container {
+            .link {
                 position: absolute;
-                right: 150px;
-                width: 200px;
-                height: 120px;
+                right: 50px;
             }
+
+
+
+
+
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="link">
         <a href="index.html">Back to Google Search</a>
         </div>
+        <h1>Find pages with...</h1>
+        <form action="https://google.com/search">
+            <label for="all these words">All these words:</label>
+            <input type="text" name="as_q" id="all these words">
+            <!--<input type="hidden" type="text" name="as_q" value="">-->
+            <p></p>
+            <label for="this exact word or phrase">This exact word or phrase:</label>
+            <input type="text" name="as_q" id="this exact word or phrase">
+            <p></p>
+
+            <label for="any of these words">Any of these words:</label>
+            <input type="text" name="as_q" id="any of these words">
+            <p></p>
+            <label for="none of these words">None of these words:</label>
+            <input type="text" name="as_q" id="none of these words"><br>
+
+            <input type="submit" value="Advanced Search">
+        </form>
     </body>
 </html>
