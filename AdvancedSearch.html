@@ -8,6 +8,16 @@
                 right: 50px;
             }
 
+            input[type=submit] {
+                background-color: #498Bf4;
+                border: none; 
+                color: white;
+                padding: 16px 32px; 
+                text-decoration: none;
+                margin: 4px 2px; 
+                cursor: pointer;
+            }
+
 
 
 
@@ -19,23 +29,20 @@
         <a href="index.html">Back to Google Search</a>
         </div>
         <h1>Find pages with...</h1>
-        <h2>Testing Testing</h2>
-        <h3> ANother Test</h3>
-        <h4>Testing</h4>
         <form action="https://google.com/search">
-            <label for="all these words">All these words:</label>
-            <input type="text" name="as_q" id="all these words">
+            <label for="txtAsq">All these words:</label>
+            <input type="text" name="as_q" id="txtAsq">
             <p></p>
-            <label for="this exact word or phrase">This exact word or phrase:</label>
-            <input type="text" name="as_epq" id="this exact word or phrase">
+            <label for="txtEpq">This exact word or phrase:</label>
+            <input type="text" name="as_epq" id="txtEpq">
             <p></p>
-            <label for="any of these words">Any of these words:</label>
-            <input type="text" name="as_oq" id="any of these words">
+            <label for="txtOq">Any of these words:</label>
+            <input type="text" name="as_oq" id="txtOq">
             <p></p>
-            <label for="none of these words">None of these words:</label>
-            <input type="text" name="as_eq" id="none of these words">
+            <label for="txtEq">None of these words:</label>
+            <input type="text" name="as_eq" id="txtEq">
             <p></p>
-            <input type="submit" value="Advanced Search">
+            <input type="submit" value="Advanced Search">        
         </form>
     </body>
 </html>
