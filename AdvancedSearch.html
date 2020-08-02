@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Advanced Search</title>
+            <title>Advanced Search</title>
+        
+        
         <style>
             .link {
                 position: absolute;
@@ -16,7 +18,34 @@
                 text-decoration: none;
                 margin: 4px 2px; 
                 cursor: pointer;
+                position: relative;
+                left: 500px;
             }
+
+            form {
+                display: table;
+
+            }
+
+            p {
+                display: table-row;
+
+            }
+
+            label {
+                display: table-cell;
+                margin: 25px
+            }
+            
+            input {
+                display: table-cell;
+                margin: 25px;
+
+            }
+
+            .heading {
+                color: #D93025;
+            }    
 
 
 
@@ -28,21 +57,33 @@
         <div class="link">
         <a href="index.html">Back to Google Search</a>
         </div>
-        <h1>Find pages with...</h1>
-        <form action="https://google.com/search">
-            <label for="txtAsq">All these words:</label>
-            <input type="text" name="as_q" id="txtAsq">
-            <p></p>
-            <label for="txtEpq">This exact word or phrase:</label>
-            <input type="text" name="as_epq" id="txtEpq">
-            <p></p>
-            <label for="txtOq">Any of these words:</label>
-            <input type="text" name="as_oq" id="txtOq">
-            <p></p>
-            <label for="txtEq">None of these words:</label>
-            <input type="text" name="as_eq" id="txtEq">
-            <p></p>
-            <input type="submit" value="Advanced Search">        
-        </form>
+
+        <div class="heading">
+        <h1> Advanced Search</h1>
+        </div>
+        <p></p>
+        <h2>Find pages with...</h2>
+        <div class="container">
+            <form action="https://google.com/search">
+                <p>
+                    <label for="txtAsq">All these words:</label>
+                    <input type="text" name="as_q" id="txtAsq">
+                </p>
+                <p>
+                    <label for="txtEpq">This exact word or phrase:</label>
+                    <input type="text" name="as_epq" id="txtEpq">
+                </p>
+                <p>
+                    <label for="txtOq">Any of these words:</label>
+                    <input type="text" name="as_oq" id="txtOq">
+                </p>
+                <p>
+                    <label for="txtEq">None of these words:</label>
+                    <input type="text" name="as_eq" id="txtEq">
+                </p>
+
+                <input type="submit" value="Advanced Search">        
+            </form>
+        
     </body>
 </html>
